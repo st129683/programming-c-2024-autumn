@@ -17,11 +17,11 @@ int main(int argc, char* argv[])
 		scanf("%d", &p[i]);
 	}
 
-	double curr_max = (double) a[0] * (double) p[0] / 100.0;
+	int curr_max = a[0] * p[0];
 	int ans = 1;
 	for (int i = 1; i < n; ++i)
 	{
-		double curr_tax = (double) a[i] * (double) p[i] / 100.0;
+		int curr_tax = a[i] * p[i];
 		if (curr_max < curr_tax)
 		{
 			curr_max = curr_tax;
